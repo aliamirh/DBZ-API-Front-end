@@ -3,11 +3,14 @@
 <h1 id="character-heading">Characters</h1>
 
 
+<div class="character-list">
 
 <% @characters.each do |character| %>
 <div class="character-name">
   <h2><%=character.fetch("name")%></h2>
 </div>
-  <a href="characters/<%=character.fetch("id")%>"><img class='character-image' src=<%=character.fetch("image")%> alt=""></a>
+  <a class="character-link" href="characters/<%=character.fetch("id")%>"><img class='character-image' src=<%=character.fetch("image")%> alt=""></a>
 
 <% end %>
+
+</div>

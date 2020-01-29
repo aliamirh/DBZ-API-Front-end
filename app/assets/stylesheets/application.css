@@ -1,10 +1,15 @@
+* {
+    border: 1px solid red;
+}
+
 .character-image{
   max-height: 500px;
   max-width: 700px;
-  height: 15%;
-  width: 15%;
-  display: block;
+  height: 35%;
+  width: 45%;
+
 }
+
 .header-image{
   /* margin-left: 50%; */
   max-height: 768px;
@@ -15,10 +20,8 @@
   width: 50%;
 }
 body{
-  background-image: radial-gradient(
-    circle at center,
-    #FFCE33 34%,
-    #F85B1A);
+  background-image: url('https://images8.alphacoders.com/909/thumb-1920-909346.jpg');
+
 }
 
 .character-name{
@@ -26,6 +29,7 @@ body{
   font-size: 25px;
   color: white;
   text-shadow: 2px 2px black;
+
 }
 
 #character-heading{
@@ -44,7 +48,7 @@ body{
 }
 
 ul {
-list-style-image: url('http://www.simpleimageresizer.com/_uploads/photos/f0dacffc/392-3929330_affordable-dragon-balls-dragon-ball-super-png_1_25x25.png');
+  list-style-image: url('http://www.simpleimageresizer.com/_uploads/photos/f0dacffc/392-3929330_affordable-dragon-balls-dragon-ball-super-png_1_25x25.png');
 
 
 }
@@ -56,6 +60,8 @@ li {
   color: white;
   text-shadow: 2px 2px black;
   width: 33%;
+  padding: 5px;
+  margin-left: 35px
 }
 
 .profile-header {
@@ -78,7 +84,7 @@ li {
   text-align: center;
   color: black;
   font-size: 23px;
-font-family: 'Acme', sans-serif;
+  font-family: 'Acme', sans-serif;
 }
 
 #home-text{
@@ -92,22 +98,24 @@ font-family: 'Acme', sans-serif;
 
 .section-1 {
   float: left;
-  width: 33%;
+  width: 32%;
   border: 1px solid black;
   height:500px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  margin-left: 15px
 }
 
 .forms {
   float: left;
-  width: 33%;
+  width: 32%;
   border: 1px solid black;
   height:500px;
+  overflow: auto;
 }
 
 .family{
   float: left;
-  width: 33%;
+  width: 32%;
   height: 500px;
   border: 1px solid black;
 
@@ -118,3 +126,22 @@ font-family: 'Acme', sans-serif;
   bottom: 0;
   left: 0;
 }
+.container {
+  background-image: radial-gradient(
+    circle at center,
+    #FFCE33 34%,
+    #F85B1A);
+    /* border-left: 8px solid black; */
+    margin-left: 50px;
+    /* border-right: 8px solid black; */
+    margin-right: 50px;
+    overflow: auto;
+    padding-bottom: 100px;
+
+
+  }
+  .character-list{
+    float: left;
+    height: 800px;
+    width: 800px;
+  }
