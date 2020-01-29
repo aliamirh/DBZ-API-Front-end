@@ -45,12 +45,17 @@ body{
 
 ul {
 list-style-image: url('http://www.simpleimageresizer.com/_uploads/photos/f0dacffc/392-3929330_affordable-dragon-balls-dragon-ball-super-png_1_25x25.png');
+
+
 }
 li {
+
+  float: left;
   font-size: 25px;
   font-family: 'Bangers', cursive;
   color: white;
   text-shadow: 2px 2px black;
+  width: 33%;
 }
 
 .profile-header {
@@ -72,16 +77,44 @@ li {
 .character-bio {
   text-align: center;
   color: black;
-  /* text-shadow: 2px 2px white; */
   font-size: 23px;
 font-family: 'Acme', sans-serif;
 }
 
 #home-text{
-  margin-left: 6%;
-  margin-top: -2%;
+  margin-left: 35%;
+  margin-top: -12%;
   font-family: 'Bangers', cursive;
   font-size: 30px;
   color: white;
   text-shadow: 2px 2px black;
+}
+
+.section-1 {
+  float: left;
+  width: 33%;
+  border: 1px solid black;
+  height:500px;
+  margin-bottom: 20px
+}
+
+.forms {
+  float: left;
+  width: 33%;
+  border: 1px solid black;
+  height:500px;
+}
+
+.family{
+  float: left;
+  width: 33%;
+  height: 500px;
+  border: 1px solid black;
+
+}
+
+.home-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
