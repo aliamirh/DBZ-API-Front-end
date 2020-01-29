@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1 id="character-heading">Characters</h1>
+
+
+
+<% @characters.each do |character| %>
+<div class="character-name">
+  <h2><%=character.fetch("name")%></h2>
+</div>
+  <img class='character-image' src=<%=character.fetch("image")%> alt="">
+
+<% end %>

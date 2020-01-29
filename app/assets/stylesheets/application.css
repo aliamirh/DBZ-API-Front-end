@@ -1,0 +1,32 @@
+.character-image{
+  max-height: 500px;
+  max-width: 700px;
+  height: 15%;
+  width: 15%;
+  display: block;
+}
+.header-image{
+  /* margin-left: 50%; */
+  max-height: 768px;
+  max-width: 1024px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body{
+  background-image: radial-gradient(
+    circle at center,
+    #FFCE33 34%,
+    #F85B1A);
+}
+
+.character-name{
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+}
+
+#character-heading{
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+}
