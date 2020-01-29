@@ -8,6 +8,6 @@
 <div class="character-name">
   <h2><%=character.fetch("name")%></h2>
 </div>
-  <img class='character-image' src=<%=character.fetch("image")%> alt="">
+  <a href="characters/<%=character.fetch("id")%>"><img class='character-image' src=<%=character.fetch("image")%> alt=""></a>
 
 <% end %>

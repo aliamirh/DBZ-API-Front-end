@@ -24,9 +24,64 @@ body{
 .character-name{
   font-family: 'Bangers', cursive;
   font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 #character-heading{
   font-family: 'Bangers', cursive;
   font-size: 50px;
+}
+
+.character-profile-image {
+  max-height: 800px;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid black;
+}
+
+ul {
+list-style-image: url('http://www.simpleimageresizer.com/_uploads/photos/f0dacffc/392-3929330_affordable-dragon-balls-dragon-ball-super-png_1_25x25.png');
+}
+li {
+  font-size: 25px;
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.profile-header {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 50px;
+  font-family: 'Bangers', cursive;
+}
+
+.character-show-name {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 75px
+}
+
+.character-bio {
+  text-align: center;
+  color: black;
+  /* text-shadow: 2px 2px white; */
+  font-size: 23px;
+font-family: 'Acme', sans-serif;
+}
+
+#home-text{
+  margin-left: 6%;
+  margin-top: -2%;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px black;
 }

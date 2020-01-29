@@ -1,4 +1,36 @@
-<p id="notice"><%= notice %></p>
+<img class='character-profile-image' src=<%=@character.fetch("image")%> alt="">
+<h2 class='character-show-name'><%=@character.fetch("name")%></h2>
 
-<%= link_to 'Edit', edit_character_path(@character) %> |
-<%= link_to 'Back', characters_path %>
+<h3 class='profile-header'>Bio</h3>
+<p class='character-bio'><%=@character.fetch("bio")%></p>
+
+<h3 class='profile-header'>Universe <%=@character.fetch("universe")%></h3>
+
+
+<h3 class='profile-header'><%=@character.fetch("race")%> Race</h3>
+
+<h3 class='profile-header'>Forms</h3>
+<ul>
+
+  <%@character.fetch("forms").each do |form|%>
+  <li><%= form %></li>
+  <%end%>
+</ul>
+
+<h3 class='profile-header'>Height: <%=@character.fetch("height")%> cm</h3>
+
+<h3 class='profile-header'>Weight: <%=@character.fetch("weight")%> kg</h3>
+
+
+<h3 class='profile-header'>Family</h3>
+<ul>
+
+  <%@character.fetch("family").each do |family|%>
+  <li><%= family %></li>
+  <%end%>
+</ul>
+
+<div class="home-link">
+<a href="/characters"><img src="https://i.imgur.com/9yOCfZ6.gif"></a>
+<h3 id="home-text">Home</h3>
+</div>
