@@ -5,12 +5,17 @@
 
 <div class="character-list">
 
-<% @characters.each do |character| %>
-<div class="character-name">
-  <h2><%=character.fetch("name")%></h2>
-</div>
+  <% @characters.each do |character| %>
+  <div class="character-name">
+    <h2><%=character.fetch("name")%></h2>
+  </div>
   <a class="character-link" href="characters/<%=character.fetch("id")%>"><img class='character-image' src=<%=character.fetch("image")%> alt=""></a>
 
-<% end %>
-
+  <% end %>
+  <div class="search-link">
+    <%= form_tag characters_path, :method => 'get'  do %>
+    <%= text_field_tag :name, params[:name]%>
+    <%= submit_tag "Search", :name => nil  %>
+    <% end %>
+  </div>
 </div>
